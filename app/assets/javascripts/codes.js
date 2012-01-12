@@ -9,7 +9,7 @@ var get_new_code = function() {
 }
 
 $(function(){
-  if ($("#codes").exists()) {
+  if ($("#codes").length > 0) {
     var t = setTimeout("get_new_code()",30000);
   }
 })  
