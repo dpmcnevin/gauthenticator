@@ -5,7 +5,7 @@ class Code < ActiveRecord::Base
   end
   
   def current_token
-    rotp.now 
+    sprintf("%06d",rotp.now)
   end
 
 end

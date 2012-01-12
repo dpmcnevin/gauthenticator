@@ -4,8 +4,7 @@
   <tr>
     <th>Account</th>
     <th>Key</th>
-    <th></th>
-    <th></th>
+    <th>Current</th>
     <th></th>
   </tr>
 
@@ -13,6 +12,7 @@
   <tr>
     <td><%= link_to code.account, code %></td>
     <td><%= code.key %></td>
+    <td><%= code.current_token %></td>
     <td><%= link_to 'Destroy', code, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
