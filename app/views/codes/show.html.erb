@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Account:</b>
+  <%= @code.account %>
+</p>
+
+<p>
+  <b>Key:</b>
+  <%= @code.key %>
+</p>
+
+<p>
+  <b>Codes:</b>
+  <pre id="codes" data-code-id="<%= @code.id %>"><%= @code.current_token %></pre>
+</p>
+
+<%= link_to 'Edit', edit_code_path(@code) %> |
+<%= link_to 'Back', codes_path %>
